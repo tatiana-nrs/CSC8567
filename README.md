@@ -1,6 +1,6 @@
 # CSC 8567 - Architectures distribuées et applications web
 
-## Auteurs : Timothée Mathubert, Gatien Roujanski, Arthur Jovart
+Auteurs : Timothée Mathubert, Gatien Roujanski, Arthur Jovart
 
 ## Emails
 
@@ -11,6 +11,7 @@ arthur.jovart@telecom-sudparis.eu
 ## Installation
 
 **Il est recommandé d'utiliser un système d'exploitation type Linux.**
+L'installation suivante fonctionne sous Ubuntu. En fonction de votre OS, il est possible qu'apt ne soit pas le gestionnaire de paquets. Remplacez simplement apt dans les commandes suivantes par votre gestionnaire de paquets.
 
 1. Créer un environnement virtuel Python avec conda
 ```
@@ -33,8 +34,13 @@ python manage.py runserver
 ```
 Allez sur 127.0.0.1:8000 sur un navigateur. Si une page "Congratulations!" s'affiche, c'est que tout fonctionne bien !
 
-4. Créez les applications utiles
+4. Créer les applications utiles
 ```
 python manage.py startapp public
 python manage.py startapp api
+```
+
+5. Installer Docker
+```
+sudo apt install docker
 ```
