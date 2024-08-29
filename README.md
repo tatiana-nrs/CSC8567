@@ -43,4 +43,16 @@ python manage.py startapp api
 5. Installer Docker
 ```
 sudo apt install docker
+docker -v
 ```
+Si la dernière commande vous affiche la version de Docker, c'est qu'il est correctement installé.
+
+6. Créer un compte Docker Hub
+
+Allez sur hub.docker.com et créez vous un compte.
+
+7. Installer kubectl
+```
+sudo apt install kubectl
+```
+
