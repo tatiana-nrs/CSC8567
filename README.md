@@ -13,14 +13,14 @@ arthur.jovart@telecom-sudparis.eu
 **Il est recommandé d'utiliser un système d'exploitation type Linux.**
 
 1. Créer un environnement virtuel Python avec conda
-
+```
  > sudo apt install conda
  > sudo apt install python
  > sudo apt install pip
  > conda init
  > conda create -n CSC8567
  > conda activate CSC8567
-
+```
 2. Installer les dépendances utiles
 
  > pip install django
@@ -37,4 +37,3 @@ Allez sur 127.0.0.1:8000 sur un navigateur. Si une page "Congratulations!" s'aff
 
  > python manage.py startapp public
  > python manage.py startapp api
-
