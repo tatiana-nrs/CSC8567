@@ -31,7 +31,6 @@ arthur.jovart@telecom-sudparis.eu
 </p>
 
 - Pour le rendu du 4 octobre, vous devez déployer une infrastructure similaire à celle ci-dessous en utilisant un fichier `docker-compose.yml` et des Dockerfiles. **L'application Django de l'API et du frontend devront être placées dans deux conteneurs différents. La base de données et le proxy seront dans deux conteneurs différents.**
-- ![infra drawio](https://github.com/user-attachments/assets/877dfc8f-ae0b-41e0-a934-19480d839d0c)
 
 <p align="center">
     <img src="https://github.com/user-attachments/assets/877dfc8f-ae0b-41e0-a934-19480d839d0c" alt="Infra à reproduire">
