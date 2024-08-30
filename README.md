@@ -27,10 +27,10 @@ arthur.jovart@telecom-sudparis.eu
 - **Votre site doit utiliser une base de données non locale (pas de fichier).** Celle-ci doit contenir un schéma relationnel de données similaire à celui ci-dessous :
 - Pour le rendu du 4 octobre, vous devez déployer une infrastructure similaire à celle ci-dessous en utilisant un fichier `docker-compose.yml` et des Dockerfiles. **L'application Django de l'API et du frontend devront être placées dans deux conteneurs différents. La base de données et le proxy seront dans deux conteneurs différents.**
 - Pour vous aider tout au long du projet, __**consultez ces différentes pages de documentation et demandez de l'aide aux enseignants**__ :
- - Django : https://docs.djangoproject.com/en/5.1/
- - Docker : https://docs.docker.com/manuals/ 
- - Kubernetes (rendu final seulement) : https://kubernetes.io/fr/docs/home/
- - Nginx (Proxy) : https://nginx.org/en/docs/
+- - Django : https://docs.djangoproject.com/en/5.1/
+- - Docker : https://docs.docker.com/manuals/ 
+- - Kubernetes (rendu final seulement) : https://kubernetes.io/fr/docs/home/
+- - Nginx (Proxy) : https://nginx.org/en/docs/
 - *Vous pouvez ajouter des applications, ajouter de la forme (Styles CSS, Bootstrap, Bulma) et des pages supplémentaires si vous le souhaitez.*
 
 ## Installation
