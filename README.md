@@ -78,7 +78,7 @@ pip install django psycopg2-binary
 4. Créer le projet Django & vérifier qu'il tourne correctement
 ```
 cd django-site
-django-admin startproject django-site
+django-admin startproject [nom-de-votre-projet] <-- A REMPLACER
 python manage.py runserver
 ```
 Allez sur 127.0.0.1:8000 sur un navigateur. Si une page "Congratulations!" s'affiche, c'est que tout fonctionne bien !
