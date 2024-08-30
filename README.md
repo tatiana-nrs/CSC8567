@@ -37,13 +37,14 @@ Lorsque vous envoyez un mail, pensez bien à mettre "CSC 8567" au début de l'ob
     <img src="https://github.com/user-attachments/assets/877dfc8f-ae0b-41e0-a934-19480d839d0c" alt="Infra à reproduire">
 </p>
 
-- Les consignes pour le rendu final avec Kubernetes vous seront communiquées après le rendu du CC Django + Docker
 - Pour vous aider tout au long du projet, __**consultez ces différentes pages de documentation et demandez de l'aide aux enseignants**__ :
     - Django : https://docs.djangoproject.com/en/5.1/
     - Docker : https://docs.docker.com/manuals/ 
     - Kubernetes (rendu final seulement) : https://kubernetes.io/fr/docs/home/
     - Nginx (Proxy) : https://nginx.org/en/docs/
 - *Vous pouvez ajouter des applications, ajouter de la forme (Styles CSS, Bootstrap, Bulma) et des pages supplémentaires si vous le souhaitez.*
+- Les consignes pour le rendu final avec Kubernetes vous seront communiquées après le rendu du CC Django + Docker.
+
 
 ## Installation
 
