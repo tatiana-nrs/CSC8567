@@ -51,7 +51,7 @@ Lorsque vous envoyez un mail, pensez bien à mettre "CSC 8567" au début de l'ob
 **Il est recommandé d'utiliser un système d'exploitation type Linux.**
 L'installation suivante fonctionne sous Ubuntu. En fonction de votre OS, il est possible qu'apt ne soit pas le gestionnaire de paquets. Remplacez simplement apt dans les commandes suivantes par votre gestionnaire de paquets.
 
-1. Cloner ce répo
+1. Créez votre propre répo de groupe en cliquant sur "Use this template"
    
 2. Créer un environnement virtuel Python avec Pyenv (non nécessaire si vous avez déjà un gestionnaires d'environnements virtuels pour Python)
 ```
