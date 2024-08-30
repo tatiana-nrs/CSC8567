@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/1/1d/Logo_T%C3%A9l%C3%A9com_SudParis.svg/153px-Logo_T%C3%A9l%C3%A9com_SudParis.svg.png" alt="TSP logo">
+</p>
+
 # CSC 8567 - Architectures distribuées et applications web
 
 Auteurs : Timothée Mathubert, Gatien Roujanski, Arthur Jovart
