@@ -2,6 +2,7 @@
     <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/1/1d/Logo_T%C3%A9l%C3%A9com_SudParis.svg/153px-Logo_T%C3%A9l%C3%A9com_SudParis.svg.png" alt="TSP logo">
 </p>
 
+
 # CSC 8567 - Architectures distribuées et applications web
 
 Auteurs : Timothée Mathubert, Gatien Roujanski, Arthur Jovart
@@ -11,6 +12,26 @@ Auteurs : Timothée Mathubert, Gatien Roujanski, Arthur Jovart
 timothee.mathubert@telecom-sudparis.eu
 gatien.roujanski@telecom-sudparis.eu
 arthur.jovart@telecom-sudparis.eu
+
+## Consignes
+
+1. **Allez avant tout à la rubrique "Installation" ci-dessous pour installer ce dont vous aurez besoin pour le cours !**
+
+2. Formez des groupes en trinômes, les plus hétérogènes possibles en niveau, et communiquez votre groupe à un enseignant.
+
+3. **Ce cours est exclusivement un cours-projet : il n'y aura pas d'examen à la fin.** En revanche, il y aura deux rendus de projet (4 octobre et 21 novembre) ainsi qu'une soutenance à la fin du cours (21 novembre).
+
+4. Vous pouvez faire le projet que vous souhaitez sous certaines conditions :
+- **Vous devez disposer de deux applications Django**, une pour **un frontend** et l'autre pour **une API retournant des données au format JSON**. 
+- Votre site web doit être accessible depuis votre interface loopback (sur l'IP 127.0.0.1) de votre PC, et contenir au moins deux pages : une pour faire des requêtes à l'API, l'autre pour afficher une liste d'objets.
+- **Votre site doit utiliser une base de données non locale (pas de fichier).** Celle-ci doit contenir un schéma relationnel de données similaire à celui ci-dessous :
+- Pour le rendu du 4 octobre, vous devez déployer une infrastructure similaire à celle ci-dessous en utilisant un fichier `docker-compose.yml` et des Dockerfiles. **L'application Django de l'API et du frontend devront être placées dans deux conteneurs différents. La base de données et le proxy seront dans deux conteneurs différents.**
+- Pour vous aider tout au long du projet, __**consultez ces différentes pages de documentation et demandez de l'aide aux enseignants**__ :
+ - Django : https://docs.djangoproject.com/en/5.1/
+ - Docker : https://docs.docker.com/manuals/ 
+ - Kubernetes (rendu final seulement) : https://kubernetes.io/fr/docs/home/
+ - Nginx (Proxy) : https://nginx.org/en/docs/
+- *Vous pouvez ajouter des applications, ajouter de la forme (Styles CSS, Bootstrap, Bulma) et des pages supplémentaires si vous le souhaitez.*
 
 ## Installation
 
