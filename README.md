@@ -25,11 +25,18 @@ arthur.jovart@telecom-sudparis.eu
 - **Vous devez disposer de deux applications Django**, une pour **un frontend** et l'autre pour **une API retournant des données au format JSON**. 
 - Votre site web doit être accessible depuis votre interface loopback (sur l'IP 127.0.0.1) de votre PC, et contenir au moins deux pages : une pour faire des requêtes à l'API, l'autre pour afficher une liste d'objets.
 - **Votre site doit utiliser une base de données non locale (pas de fichier).** Celle-ci doit contenir un schéma relationnel de données similaire à celui ci-dessous :
+
 <p align="center">
     <img src="https://github.com/user-attachments/assets/a5fcfbe9-5f04-4cbf-a154-80215426cb24" alt="BDD">
 </p>
 
 - Pour le rendu du 4 octobre, vous devez déployer une infrastructure similaire à celle ci-dessous en utilisant un fichier `docker-compose.yml` et des Dockerfiles. **L'application Django de l'API et du frontend devront être placées dans deux conteneurs différents. La base de données et le proxy seront dans deux conteneurs différents.**
+- ![infra drawio](https://github.com/user-attachments/assets/877dfc8f-ae0b-41e0-a934-19480d839d0c)
+
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/877dfc8f-ae0b-41e0-a934-19480d839d0c" alt="Infra à reproduire">
+</p>
+
 - Pour vous aider tout au long du projet, __**consultez ces différentes pages de documentation et demandez de l'aide aux enseignants**__ :
     - Django : https://docs.djangoproject.com/en/5.1/
     - Docker : https://docs.docker.com/manuals/ 
