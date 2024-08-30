@@ -53,7 +53,7 @@ L'installation suivante fonctionne sous Ubuntu. En fonction de votre OS, il est 
 
 1. Cloner ce répo
    
-2. Créer un environnement virtuel Python avec Pyenv
+2. Créer un environnement virtuel Python avec Pyenv (non nécessaire si vous avez déjà un gestionnaires d'environnements virtuels pour Python)
 ```
 sudo apt install pyenv
 sudo apt install python
