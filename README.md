@@ -49,7 +49,9 @@ Lorsque vous envoyez un mail, pensez bien à mettre "CSC 8567" au début de l'ob
 **Il est recommandé d'utiliser un système d'exploitation type Linux.**
 L'installation suivante fonctionne sous Ubuntu. En fonction de votre OS, il est possible qu'apt ne soit pas le gestionnaire de paquets. Remplacez simplement apt dans les commandes suivantes par votre gestionnaire de paquets.
 
-1. Créer un environnement virtuel Python avec conda
+1. Cloner ce répo
+   
+2. Créer un environnement virtuel Python avec conda
 ```
 sudo apt install pyenv
 sudo apt install python
@@ -67,11 +69,11 @@ Ensuite :
 ```
 pyenv install 3.12
 ```
-2. Installer les dépendances utiles
+3. Installer les dépendances utiles
 ```
-pip install django
+pip install django psycopg2-binary
 ```
-3. Créer le projet Django & vérifier qu'il tourne correctement
+4. Créer le projet Django & vérifier qu'il tourne correctement
 ```
 cd django-site
 django-admin startproject django-site
@@ -79,25 +81,26 @@ python manage.py runserver
 ```
 Allez sur 127.0.0.1:8000 sur un navigateur. Si une page "Congratulations!" s'affiche, c'est que tout fonctionne bien !
 
-4. Créer les applications utiles
+5. Créer les applications utiles
 ```
 python manage.py startapp public
 python manage.py startapp api
 ```
 
-5. Installer Docker
+6. Installer Docker
 ```
 sudo apt install docker
 docker -v
 ```
 Si la dernière commande vous affiche la version de Docker, c'est qu'il est correctement installé.
 
-6. Créer un compte Docker Hub
+7. Créer un compte Docker Hub
 
 Allez sur https://hub.docker.com et créez vous un compte.
 
-7. Installer kubectl
+8. Installer kubectl
 ```
 sudo apt install kubectl
 ```
+
 Et c'est parti !
