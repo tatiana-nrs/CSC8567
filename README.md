@@ -50,12 +50,21 @@ L'installation suivante fonctionne sous Ubuntu. En fonction de votre OS, il est 
 
 1. Créer un environnement virtuel Python avec conda
 ```
-sudo apt install conda
+sudo apt install pyenv
 sudo apt install python
 sudo apt install pip
-conda init
-conda create -n CSC8567
-conda activate CSC8567
+```
+Si vous utilisez Bash comme exécuteur de commande dans votre Shell :
+```
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+```
+Si vous utilisez autre chose, allez voir la [documentation Pyenv](https://github.com/pyenv/pyenv?tab=readme-ov-file#set-up-your-shell-environment-for-pyenv).
+
+Ensuite :
+```
+pyenv install 3.12
 ```
 2. Installer les dépendances utiles
 ```
