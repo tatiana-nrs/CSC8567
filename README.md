@@ -55,4 +55,4 @@ Allez sur https://hub.docker.com et créez vous un compte.
 ```
 sudo apt install kubectl
 ```
-
+Et c'est parti !
