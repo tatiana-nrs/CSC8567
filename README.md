@@ -37,6 +37,7 @@ Lorsque vous envoyez un mail, pensez bien à mettre "CSC 8567" au début de l'ob
     <img src="https://github.com/user-attachments/assets/877dfc8f-ae0b-41e0-a934-19480d839d0c" alt="Infra à reproduire">
 </p>
 
+- Les consignes pour le rendu final avec Kubernetes vous seront communiquées après le rendu du CC Django + Docker
 - Pour vous aider tout au long du projet, __**consultez ces différentes pages de documentation et demandez de l'aide aux enseignants**__ :
     - Django : https://docs.djangoproject.com/en/5.1/
     - Docker : https://docs.docker.com/manuals/ 
