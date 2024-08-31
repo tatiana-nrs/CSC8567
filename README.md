@@ -28,7 +28,7 @@ Lorsque vous envoyez un mail, pensez bien à mettre "CSC 8567" au début de l'ob
 - **Votre site doit utiliser une base de données non locale (pas de fichier).** Celle-ci doit contenir un schéma relationnel de données similaire à celui ci-dessous :
 
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/a5fcfbe9-5f04-4cbf-a154-80215426cb24" alt="BDD">
+    <img src="https://github.com/user-attachments/assets/4cd224f5-5f64-48b7-bd6f-c25f301275ca" alt="BDD">
 </p>
 
 - Pour le rendu du 24 septembre, vous devez déployer une infrastructure similaire à celle ci-dessous en utilisant un fichier `docker-compose.yml` et des Dockerfiles. **L'application Django de l'API et du frontend devront être placées dans deux conteneurs différents. La base de données et le proxy seront dans deux conteneurs différents.**
