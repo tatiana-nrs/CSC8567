@@ -20,7 +20,7 @@ Lorsque vous envoyez un mail, pensez bien à mettre "CSC 8567" au début de l'ob
 
 2. Formez des groupes en trinômes, les plus hétérogènes possibles en niveau, et communiquez votre groupe à un enseignant.
 
-3. **Ce cours est exclusivement un cours-projet : il n'y aura pas d'examen à la fin.** En revanche, il y aura deux rendus de projet (4 octobre et 21 novembre) ainsi qu'une soutenance à la fin du cours (21 novembre).
+3. **Ce cours est exclusivement un cours-projet : il n'y aura pas d'examen à la fin.** En revanche, il y aura deux rendus de projet (24 septembre et 21 novembre) ainsi qu'une soutenance à la fin du cours (21 novembre).
 
 4. Vous pouvez faire le projet que vous souhaitez sous certaines conditions :
 - **Vous devez disposer de deux applications Django**, une pour **un frontend** et l'autre pour **une API retournant des données au format JSON**. 
@@ -31,7 +31,7 @@ Lorsque vous envoyez un mail, pensez bien à mettre "CSC 8567" au début de l'ob
     <img src="https://github.com/user-attachments/assets/a5fcfbe9-5f04-4cbf-a154-80215426cb24" alt="BDD">
 </p>
 
-- Pour le rendu du 4 octobre, vous devez déployer une infrastructure similaire à celle ci-dessous en utilisant un fichier `docker-compose.yml` et des Dockerfiles. **L'application Django de l'API et du frontend devront être placées dans deux conteneurs différents. La base de données et le proxy seront dans deux conteneurs différents.**
+- Pour le rendu du 24 septembre, vous devez déployer une infrastructure similaire à celle ci-dessous en utilisant un fichier `docker-compose.yml` et des Dockerfiles. **L'application Django de l'API et du frontend devront être placées dans deux conteneurs différents. La base de données et le proxy seront dans deux conteneurs différents.**
 
 <p align="center">
     <img src="https://github.com/user-attachments/assets/877dfc8f-ae0b-41e0-a934-19480d839d0c" alt="Infra à reproduire">
