@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails de la Clé</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6f2; 
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #ff4da6; 
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #ff1a8c; 
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .header-links {
+            margin-top: 10px;
+        }
+        .header-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+        .header-links a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .key-details {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .key-details h2 {
+            color: #ff4da6; 
+            margin-top: 0;
+        }
+        .key-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .key-item:last-child {
+            border-bottom: none;
+        }
+        .available {
+            color: #388E3C; 
+        }
+        .used {
+            color: #F44336; 
+        }
+        footer {
+            background: #ff4da6; 
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            border-top: 5px solid #ff1a8c;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Détails de la Clé</h1>
+        <div class="header-links">
+            <a href="{% url 'list_cars' %}">Voitures</a>
+            <a href="{% url 'list_keys' %}">Clés</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="key-details">
+            <h2>Informations sur la Clé</h2>
+            <div class="key-item">
+                <p><strong>Clé ID:</strong> {{ key.id }}</p>
+                <p><strong>Voiture:</strong> {{ key.voiture.marque }} {{ key.voiture.modele }}</p>
+                <p><strong>Date de Prêt:</strong> {{ key.date_pret }}</p>
+                <p><strong>Date de Rendu:</strong> {{ key.date_rendu|default:"Non rendue" }}</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Garage de Tatiana. Tous droits réservés. <a href="{% url 'list_keys' %}">Retour à la liste des clés</a></p>
+    </footer>
+</body>
+</html>

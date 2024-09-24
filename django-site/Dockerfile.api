@@ -1,1 +1,10 @@
+# Dockerfile.api
+
 FROM python:latest
+ENV DJANGO_SETTINGS_MODULE=projet.api_settings
+WORKDIR /app
+COPY projet/api/requirements.txt /app/
+RUN pip install --no-cache-dir -r requirements.txt
+COPY projet /app/
+EXPOSE 8080
+CMD ["sh", "-c", "python manage.py migrate && python manage.py runserver 0.0.0.0:8080"]

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Clés</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f78fb3, #fad0c4);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #ff6b81; 
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            border-bottom: 5px solid #ee5253; 
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        .header-links {
+            margin-top: 10px;
+        }
+
+        .header-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        .header-links a:hover {
+            color: #fad0c4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .key-list {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .key-list h2 {
+            margin-top: 0;
+            color: #ff6b81; 
+        }
+
+        .key-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        .key-item:last-child {
+            border-bottom: none;
+        }
+
+        .available {
+            color: #388E3C; 
+        }
+
+        .used {
+            color: #F44336; 
+        }
+
+        footer {
+            background: #ff6b81; 
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-top: 5px solid #ee5253;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Liste des Clés</h1>
+        <div class="header-links">
+            <a href="{% url 'list_cars' %}">Voitures</a>
+            <a href="{% url 'list_keys' %}">Clés</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="key-list">
+            <h2>Clés Disponibles</h2>
+            {% for key in available_keys %}
+                <div class="key-item available">
+                    <p><strong>Clé ID:</strong> {{ key.id }}</p>
+                    <p><strong>Voiture:</strong> {{ key.voiture.marque }} {{ key.voiture.modele }}</p>
+                    <p><strong>Date de Prêt:</strong> {{ key.date_pret }}</p>
+                    <p><strong>Date de Rendu:</strong> {{ key.date_rendu|default:"Non rendue" }}</p>
+                </div>
+            {% empty %}
+                <p>Aucune clé disponible.</p>
+            {% endfor %}
+        </div>
+
+        <div class="key-list">
+            <h2>Clés Utilisées</h2>
+            {% for key in used_keys %}
+                <div class="key-item used">
+                    <p><strong>Clé ID:</strong> {{ key.id }}</p>
+                    <p><strong>Voiture:</strong> {{ key.voiture.marque }} {{ key.voiture.modele }}</p>
+                    <p><strong>Date de Prêt:</strong> {{ key.date_pret }}</p>
+                    <p><strong>Date de Rendu:</strong> {{ key.date_rendu }}</p>
+                </div>
+            {% empty %}
+                <p>Aucune clé utilisée.</p>
+            {% endfor %}
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Garage de Tatiana. Tous droits réservés. | <a href="/public/">Retour vers l'accueil</a></p>
+    </footer>
+
+</body>
+</html>
