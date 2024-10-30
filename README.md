@@ -1,4 +1,4 @@
-LISTE DES CHEMINS URL DU SITE: 
+# LISTE DES CHEMINS URL DU SITE: 
 
 Pour l'application api: 
 
@@ -30,11 +30,11 @@ Liste des chemins :
 
 
 
-QUESTIONS:
+# QUESTIONS:
 
-Fonctionnement de Django:
+## Fonctionnement de Django:
 
-Questions 1: Vous disposez d'un projet Django dans lequel une application public a été créée. Décrivez la suite de requêtes et d'exécutions permettant l'affichage d'une page HTML index.html à l'URL global / via une application public, ne nécessitant pas de contexte de données. Vous décrirez la position exacte dans l'arborescence des répertoires des différents fichiers utiles à cette exécution.
+### Questions 1: Vous disposez d'un projet Django dans lequel une application public a été créée. Décrivez la suite de requêtes et d'exécutions permettant l'affichage d'une page HTML index.html à l'URL global / via une application public, ne nécessitant pas de contexte de données. Vous décrirez la position exacte dans l'arborescence des répertoires des différents fichiers utiles à cette exécution.
 
 Afin d'afficher une page HTML index.html à l'URL global / via une application public, il existe plusieurs étapes:
 
@@ -103,7 +103,7 @@ On peut lancer le serveur Django avec la commande python manage.py runserver
 
 
 
-Question 2: Dans quelle(s) section(s) de quel(s) fichier(s) peut-on configurer la base de données que l'on souhaite utiliser pour un projet Django ?
+### Question 2: Dans quelle(s) section(s) de quel(s) fichier(s) peut-on configurer la base de données que l'on souhaite utiliser pour un projet Django ?
 
 Généralement, la configuration de la base de données que l'on souhaite utiliser dans un projet Django se fait dans le fichier projet/projet/settings.py. Ce fichier contient une section DATABASES qui définit la base de données que le projet Django utilise. 
 
@@ -124,7 +124,7 @@ Ainsi, il est possible de créer des fichiers de configuration spécifiques à l
 
 
 
-Question 3: Dans quel(s) fichier(s) peut-on configurer le fichier de paramètres que l'on souhaite faire utiliser par le projet Django ? Si plusieurs fichers sont à mentionner, expliquez le rôle de chaque fichier.
+### Question 3: Dans quel(s) fichier(s) peut-on configurer le fichier de paramètres que l'on souhaite faire utiliser par le projet Django ? Si plusieurs fichers sont à mentionner, expliquez le rôle de chaque fichier.
 
 Le fichier de paramètres que l'on souhaite utiliser pour le projet Django peut être configuré dans plusieurs fichiers. En effet, lorsque l'on lance une application Django, la valeur d'une variable d'environnement DJANGO_SETTINGS_MODULE est récupérée et cette dernière peut pointer vers un fichier de settings particulier. Par défaut, si cette variable est absente, c'est le fichier settings.py qui est utilisé. 
 
@@ -166,9 +166,9 @@ les fichiers dans migrations/. Ce répertoire est crée automatiquement dans le 
 
 
 
-Fonctionnement de Docker
+## Fonctionnement de Docker
 
-Question 1: Expliquez l'effet et la syntaxe de ces commandes, communément vues dans des fichiers Dockerfile : FROM, RUN, WORKDIR, EXPOSE, CMD.
+### Question 1: Expliquez l'effet et la syntaxe de ces commandes, communément vues dans des fichiers Dockerfile : FROM, RUN, WORKDIR, EXPOSE, CMD.
 
 La commande FROM permet de spécifier l'image de base à partir de laquelle l'image Docker sera construite (distribution linux, environnement de langage spécifique...).
 
@@ -181,7 +181,7 @@ La commande EXPOSE indique les ports sur lesquels une application dans le conten
 Enfin, la commande CMD définit la commande par défaut à exécuter une fois que le conteneur est démarré. Une seule commande CMD est permise par Dockerfile. 
 
 
-Question 2: Dans la définition d'un service dans le fichier docker-compose.yml, expliquez l'effet des mentions :
+### Question 2: Dans la définition d'un service dans le fichier docker-compose.yml, expliquez l'effet des mentions :
 
 ports:
     - "80:80"
@@ -221,11 +221,11 @@ Cette section gère l'ordre de démarrage des services et indique que le service
 Enfin, la section environnement permet de définir des variables d'environnement pour le service donné (ici celles de configuration de la base de données). 
 
 
-Question 3: Citez une méthode pour définir des variables d'environnement dans un conteneur.
+### Question 3: Citez une méthode pour définir des variables d'environnement dans un conteneur.
 
 Il est possible de définir des variables d'environnement dans le Dockerfile à l'aide de la commande ENV.
 
 
-Question 4: Dans un même réseau Docker, nous disposons d'un conteneur nginx (utilisant l'image nginx:latest) et d'un conteneur web (utilisant une image contenant un projet web Django, ayant la commande python manage.py runserver 0.0.0.0:8000 de lancée au démarrage du conteneur). Comment adresser le serveur web tournant dans le conteneur web depuis le conteneur nginx, sans utiliser les adresses IP des conteneurs ?
+### Question 4: Dans un même réseau Docker, nous disposons d'un conteneur nginx (utilisant l'image nginx:latest) et d'un conteneur web (utilisant une image contenant un projet web Django, ayant la commande python manage.py runserver 0.0.0.0:8000 de lancée au démarrage du conteneur). Comment adresser le serveur web tournant dans le conteneur web depuis le conteneur nginx, sans utiliser les adresses IP des conteneurs ?
 
 Pour adresser le serveur web tournant dans le conteneur web depuis le conteneur nginx, sans utiliser les adresses IP des conteneurs, il faut savoir que dans Docke, les conteneurs connectés au même réseau peuvent se communiquer par leurs noms de service, grâce au DNS interne de Docker.
